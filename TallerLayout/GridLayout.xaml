@@ -15,19 +15,19 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <!-- Primer cuadrado -->
+            
             <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="Red"/>
 
-            <!-- Segundo cuadrado -->
+            
             <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="Green"/>
 
-            <!-- Tercer cuadrado -->
+            
             <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="Blue"/>
 
-            <!-- Cuarto cuadrado -->
+            
             <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="Yellow"/>
 
-            <!-- Botón -->
+            
             <Button Text="Ir a StackLayout" Clicked="Button_Clicked"
                     Grid.Row="1" Grid.Column="1"
                     VerticalOptions="End" HorizontalOptions="End"/>

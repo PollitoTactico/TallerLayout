@@ -4,29 +4,75 @@
              x:Class="TallerLayout.FlexLayoutPage"
              Title="FlexLayoutPage">
     <ContentPage.Content>
-        <FlexLayout Direction="Row" JustifyContent="Center" AlignItems="Center">
-            <Label 
-                Text="Etiqueta 1"
-                FontSize="24"
-                TextColor="White"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" 
-                BackgroundColor="Blue"/>
-            <Label 
+
+        <ScrollView>
+            <FlexLayout Direction="Column" JustifyContent="SpaceEvenly" AlignItems="Center" >
+
+                <FlexLayout Direction="Row" JustifyContent="SpaceEvenly" AlignItems="Center" >
+
+                    <Label Text="Apreta aqui" />
+                    <ImageButton Source="hola.jpg.jpg"
+                WidthRequest="100"
+                HeightRequest="100"
+                BackgroundColor="Transparent"
+                Clicked="OnImageButtonClicked" />
+
+
+                    <Label 
+            Text="Etiqueta 1"
+            FontSize="24"
+            TextColor="White"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            BackgroundColor="Blue"/>
+                </FlexLayout>
+
+
+                <FlexLayout Direction="Row" JustifyContent="SpaceEvenly" AlignItems="Center" >
+                    <Label Text="Apreta aqui" />
+                    <ImageButton Source="papu.jpg"
+             WidthRequest="100"
+             HeightRequest="100"
+             BackgroundColor="Transparent"
+             Clicked="OnImageButtonClicked" />
+
+
+                    <Label 
+                
                 Text="Etiqueta 2"
-                FontSize="18"
-                TextColor="Black"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" 
-                BackgroundColor="Cyan"/>
-            <Label 
-                Text="Etiqueta 3"
-                FontSize="12"
-                TextColor="Black"
+                FontSize="20"
+                TextColor="White"   
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" 
                 BackgroundColor="Red"/>
-        </FlexLayout>
 
+
+
+                </FlexLayout>
+
+                <FlexLayout Direction="Row" JustifyContent="SpaceEvenly" AlignItems="Center" >
+                    <Label Text="Apreta aqui" />
+                    <ImageButton Source="mamu.jpg"
+               WidthRequest="100"
+               HeightRequest="100"
+               BackgroundColor="Transparent"
+               Clicked="OnImageButtonClicked" />
+
+
+                    <Label 
+                Text="Etiqueta 3"
+                FontSize="20"
+                TextColor="White"   
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                BackgroundColor="Green"/>
+
+                </FlexLayout>
+
+
+            
+            </FlexLayout>
+        </ScrollView>
+            
     </ContentPage.Content>
 </ContentPage>
